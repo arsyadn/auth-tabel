@@ -5,22 +5,92 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
-
+.login-wrapper {
+  /* background: url(../public/assets/img_jakarta.jpg) no-repeat center center
+    fixed; */
+  background: #628bab;
+  background: -webkit-linear-gradient(
+      (rgba(76, 78, 94, 0.8), rgba(17, 44, 53, 0.8))
+    ),
+    url(../public/assets/img_jakarta.jpg) no-repeat center center fixed;
+  background: linear-gradient(rgba(76, 78, 94, 0.8), rgba(17, 44, 53, 0.8)),
+    url(../public/assets/img_jakarta.jpg) no-repeat center center fixed; /* The least supported option. */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  min-height: 100vh;
+}
+.form-wrapper {
+  color: #fff;
+  background-color: #1a374d;
+  width: 300px;
+  height: 350px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.form-wrapper button {
+  height: 45px;
+}
+.navbar {
+  background-color: #406882;
+}
+.search,
+.form-input {
+  box-shadow: none !important;
+}
+.person {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  color: #fff;
+}
+.person:hover {
+  background-color: #1a374d;
+}
+.table {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+}
+input {
+  border-radius: 10px 0 0 10px !important;
+}
+.btn {
+  width: 100px;
+  height: 35px;
+  padding: 5px 10px !important;
+  margin-top: 16px;
+  border-radius: 0 10px 10px 0 !important;
+  background-color: #1a374d !important;
+  border: 1px solid #1a374d !important;
+  color: #fff !important;
+}
+.btn:hover {
+  background-color: #495579 !important;
+  border: 1px solid #495579 !important;
+}
+.btn p {
+  margin-bottom: 0;
+  margin-right: 5px;
+}
+.btn-logout {
+  border-radius: 10px !important;
+}
+.btn-login {
+  background-color: rgb(231, 231, 231) !important;
+  color: #1a374d !important;
+  border-radius: 10px !important;
+  width: fit-content;
+}
+.text-acc {
+  font-size: 12px !important;
+}
 a {
-  color: inherit;
-  text-decoration: none;
+  text-decoration: none !important;
 }
-
-* {
-  box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.pop-up {
+  width: 260px;
+  height: 180px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  right: 0px;
 }
